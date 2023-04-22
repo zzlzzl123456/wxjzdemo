@@ -1,0 +1,1 @@
+<view><input class="uni-input" type="digit" placeholder="请输入金额" data-event-opts="{{[['input',[['__set_model',['$0','money','$event',[]],['valiFormData']],['testMoney',['$event']]]]]}}" value="{{valiFormData.money}}" bindinput="__e"/></view>

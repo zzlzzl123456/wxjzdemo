@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-segmented-control": "/uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control",
+    "pay-book-item": "/components/pay-book-item/pay-book-item",
+    "income-book-item": "/components/income-book-item/income-book-item"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "easycom": {
+    "echarts": "@/components/echarts-uniapp/echarts-uniapp.vue"
+  },
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+      "style": {
+        "navigationBarTitleText": "注销账号"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+      "style": {
+        "navigationBarTitleText": "绑定手机号码"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/login/login-smscode",
+      "style": {
+        "navigationBarTitleText": "手机验证码登录"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/register/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/register/register-by-email",
+      "style": {
+        "navigationBarTitleText": "邮箱验证码注册"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+      "style": {
+        "navigationBarTitleText": "重置密码"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+      "style": {
+        "navigationBarTitleText": "通过邮箱重置密码"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/common/webview/webview",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": ""
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "修改密码"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/register/register-admin",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "注册管理员账号"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "设置密码"
+      }
+    }, {
+      "path": "uni_modules/uni-id-pages/pages/userinfo/realname-verify/realname-verify",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "实名认证"
+      }
+    }, {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/test/test",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/userinfo/userinfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/userinfo/change-pwd/change-pwd",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/retrieve/retrieve",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/index/bookDetail/bookDetail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/addBook/addBook",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/addBook/bookTypeList/bookTypeList",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/addBook/addBookType/addBookType",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    },
+    {
+      "path": "pages/test2/test2",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/chart/chart",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "uniIdRouter": {
+    "loginPage": "pages/login/login",
+    "needLogin": [
+      "pages/addBook/addBook"
+    ]
+  },
+  "tabBar": {
+    "list": [{
+        "text": "明细",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "图表",
+        "pagePath": "pages/chart/chart"
+      },
+      {
+        "text": "记账",
+        "pagePath": "pages/addBook/addBook"
+      },
+      {
+        "text": "用户",
+        "pagePath": "pages/userinfo/userinfo"
+      }
+    ]
+  }
+}

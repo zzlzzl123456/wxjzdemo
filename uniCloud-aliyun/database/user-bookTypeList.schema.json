@@ -1,0 +1,50 @@
+{
+  "bsonType": "object",
+  "required": [
+    "type","name", "icon"
+  ],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "存储文档 ID（文章 ID），系统自动生成"
+    },
+    "userId": {
+      "bsonType": "string",
+      "description": "用户id",
+      "foreignKey": "uni-id-users._id",
+      "defaultValue":{
+        "$env": "uid"
+      }
+    },
+    "type": {
+      "bsonType": "string",
+      "description": "类型"
+    },
+    "name": {
+      "bsonType": "string",
+      "description": "类别名称",
+      "label": "名称",
+      "trim": "both"
+    },
+    "icon": {
+      "bsonType": "string",
+      "description": "类别图标地址",
+      "label": "图标地址",
+      "pattern": "^(http://|https://|/|./|@/)\\S",
+      "trim": "both"
+    },
+    "create_date": {
+      "bsonType": "timestamp",
+      "description": "创建时间",
+      "forceDefaultValue": {
+        "$env": "now"
+      }
+    }
+  },
+  "version": "0.0.1"
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-data-checkbox": "/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox",
+    "echarts": "/components/echarts-uniapp/echarts-uniapp",
+    "charts-list-box": "/components/charts-listBox/charts-listBox"
+  }
+}
